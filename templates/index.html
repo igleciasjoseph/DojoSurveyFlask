@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href= {{ url_for( 'static' , filename = 'style.css') }}>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Dojo Survey</title>
+</head>
+<body>
+    <div id="wrapper">
+        <form action="/result" method="POST">
+            <p>Your Name: <input type="text" name="name" class ="field"></p>
+            <p>Dojo Location: <select name="dojo" id="dojo_location" class="field">
+                <option value="San Jose">San Jose</option>
+            </select></p>
+            <p>Favorite Language: <select name="language" id="fav_lang" class="field">
+                <option value="Python">Python</option>
+            </select></p>
+            <p>Comment (optional): <br><textarea rows="5" cols="50" name="text"></textarea></p>
+            <button type="submit">Button</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    padding: 20px 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#wrapper {
+    margin: 0 auto;
+    border: 3px solid black;
+    width: 340px;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+form {
+    display: inline-block;
+    vertical-align: top;
+    width: inherit;
+}
+
+form p {
+    margin: 10px;
+}
+
+button {
+    padding: 5px;
+}
